@@ -224,12 +224,11 @@ router.delete("/:postId/comments/:commentId", auth, async (req, res) => {
 
 // 시드용 카테고리 배열 (빈 문자열 제외)
 const categories = [
-  "Technology",
-  "Lifestyle",
-  "Travel",
-  "Business",
-  "Economy",
-  "Sports",
+  "Troubleshooting", // 문제해결과정
+  "Insights", // 생각정리,회고,느낀점
+  "Learning Log", //나의 성장 기록S
+  "Resources", // 팁,도구,효율화
+  "NextSteps", // 앞으로의목표
 ];
 
 // ▶ [POST] /posts/seed
